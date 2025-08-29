@@ -1,0 +1,157 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   CreativeAI Studio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#121212] text-white min-h-screen">
+  <header class="flex items-center justify-between px-4 py-3 bg-[#121212] border-b border-gray-800">
+   <div class="flex items-center space-x-3">
+    <img alt="CreativeAI Studio logo with blue and purple gradient background and white stacked layers icon" class="w-8 h-8 rounded-md" height="32" src="https://storage.googleapis.com/a1aa/image/4c09f2c6-5e70-4c9d-8e5c-8ecee7a49c91.jpg" width="32"/>
+    <h1 class="text-white font-semibold text-lg select-none">
+     CreativeAI Studio
+    </h1>
+   </div>
+   <div class="flex items-center space-x-4">
+    <button aria-label="Menu" class="w-10 h-10 flex items-center justify-center rounded-lg bg-[#222222] hover:bg-[#2a2a2a] focus:outline-none focus:ring-2 focus:ring-[#5B5BFF]">
+     <i class="fas fa-bars text-white text-xl">
+     </i>
+    </button>
+    <button aria-label="User profile" class="w-10 h-10 rounded-full bg-gradient-to-r from-[#7B5BFF] via-[#5B5BFF] to-[#5BFFB0]">
+    </button>
+   </div>
+  </header>
+  <main class="p-4 space-y-8 max-w-md mx-auto">
+   <section class="bg-[#1A1A1A] rounded-xl p-6 space-y-6">
+    <h2 class="text-white font-bold text-xl flex items-center space-x-2 select-none">
+     <i class="fas fa-palette text-[#7B5BFF]">
+     </i>
+     <span>
+      Create Your Design
+     </span>
+    </h2>
+    <form class="space-y-6">
+     <div>
+      <label class="block text-white text-base font-normal mb-2 select-none" for="describe">
+       Describe your image
+      </label>
+      <textarea class="w-full bg-[#121212] border border-gray-700 rounded-lg p-3 text-gray-400 placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-[#5B5BFF] focus:border-transparent" id="describe" placeholder="A futuristic cityscape with neon lights and flying cars..." rows="3"></textarea>
+     </div>
+     <div class="grid grid-cols-2 gap-x-6 gap-y-4">
+      <div>
+       <label class="block text-white text-base font-normal mb-2 select-none" for="style">
+        Style
+       </label>
+       <select class="w-full bg-[#121212] border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#5B5BFF] focus:border-transparent" id="style">
+        <option>
+         Digital Art
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-white text-base font-normal mb-2 select-none" for="model">
+        AI Model
+       </label>
+       <select class="w-full bg-[#121212] border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#5B5BFF] focus:border-transparent" id="model">
+        <option>
+         Stable Diffusion 2.1
+        </option>
+        <option>
+         Stable Diffusion XL
+        </option>
+        <option>
+         Stable Diffusion 1.5
+        </option>
+        <option>
+         Stable Diffusion 1.2
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-white text-base font-normal mb-2 select-none" for="size">
+        Size
+       </label>
+       <select class="w-full bg-[#121212] border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#5B5BFF] focus:border-transparent" id="size">
+        <option>
+         1:1 Square
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-white text-base font-normal mb-2 select-none" for="quality">
+        Quality
+       </label>
+       <select class="w-full bg-[#121212] border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#5B5BFF] focus:border-transparent" id="quality">
+        <option>
+         Standard
+        </option>
+       </select>
+      </div>
+     </div>
+     <button class="w-full py-3 rounded-xl bg-gradient-to-r from-[#7B5BFF] via-[#5B5BFF] to-[#00C6FF] text-white font-semibold text-lg flex items-center justify-center space-x-2 hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#5B5BFF]" type="submit">
+      <i class="fas fa-bolt">
+      </i>
+      <span>
+       Generate Image
+      </span>
+     </button>
+    </form>
+   </section>
+   <section class="bg-[#1A1A1A] rounded-xl p-6 space-y-6">
+    <h2 class="text-white font-bold text-xl select-none">
+     Quick Templates
+    </h2>
+    <div class="grid grid-cols-2 gap-4">
+     <button class="flex items-center justify-center space-x-2 rounded-lg border border-gray-700 px-4 py-3 text-white font-semibold hover:bg-[#222222] focus:outline-none focus:ring-2 focus:ring-[#5B5BFF]">
+      <span class="text-xl">
+       🎨
+      </span>
+      <span>
+       Abstract Art
+      </span>
+     </button>
+     <button class="flex items-center justify-center space-x-2 rounded-lg border border-gray-700 px-4 py-3 text-white font-semibold hover:bg-[#222222] focus:outline-none focus:ring-2 focus:ring-[#5B5BFF]">
+      <span class="text-xl">
+       ⚔️
+      </span>
+      <span>
+       Demon Slayer Style
+      </span>
+     </button>
+     <button class="flex items-center justify-center space-x-2 rounded-lg border border-gray-700 px-4 py-3 text-white font-semibold hover:bg-[#222222] focus:outline-none focus:ring-2 focus:ring-[#5B5BFF]">
+      <span class="text-xl">
+       🔮
+      </span>
+      <span>
+       Fantasy
+      </span>
+     </button>
+     <button class="flex items-center justify-center space-x-2 rounded-lg border border-gray-700 px-4 py-3 text-white font-semibold hover:bg-[#222222] focus:outline-none focus:ring-2 focus:ring-[#5B5BFF]">
+      <span class="text-xl">
+       💼
+      </span>
+      <span>
+       Business
+      </span>
+     </button>
+    </div>
+    <button aria-label="Add new template" class="absolute bottom-8 right-8 w-14 h-14 rounded-full bg-gradient-to-r from-[#7B5BFF] via-[#5B5BFF] to-[#00C6FF] flex items-center justify-center text-white text-3xl shadow-lg hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#5B5BFF]" style="transform: translateX(50%) translateY(50%)">
+     +
+    </button>
+   </section>
+   <section class="bg-[#1A1A1A] rounded-xl p-6">
+    <h2 class="text-white font-bold text-xl mb-4 select-none">
+     Image Showing Area
+    </h2>
+    <img alt="Placeholder image showing a futuristic city
